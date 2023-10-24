@@ -5,11 +5,11 @@ volumes:
 
 services:
   api:
-    image: devmiguelangel/nsg-task-api
+    image: devmiguelangel/tasks-api
     build:
       context: .
       dockerfile: ./compose/app/Dockerfile
-    container_name: nsg_task_api
+    container_name: tasks_api
     ports:
       - '3000:3000'
     volumes:
